@@ -1,0 +1,48 @@
+name: Предложение
+description: Предложить улучшение интерфейса или возможностей VKN.
+title: "[Предложение]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Расскажите, какую задачу вы хотите решить и как могла бы выглядеть функция. Предложение не означает обещания реализации или сроков; доступные возможности зависят в том числе от VK.
+
+        **Содержимое Issue и вложения могут быть публичными.** Не прикладывайте токены, данные входа или личные данные аккаунта.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Какую задачу нужно решить?
+      description: Опишите ситуацию, в которой текущего поведения VKN недостаточно.
+      placeholder: "Когда я…, мне приходится…"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Что вы предлагаете?
+      description: Как приложение должно работать? Приведите пример использования.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Другие варианты решения
+      description: Необязательно. Можно ли решить задачу уже существующими средствами или другим способом?
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: Примеры и дополнительные сведения
+      description: Необязательно. Ссылки, эскизы и скриншоты, которые помогут понять предложение. Проверьте вложения на личные данные.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Перед отправкой
+      options:
+        - label: Я проверил существующие Issues и не нашёл такого же предложения.
+          required: true
+        - label: Я проверил текст и вложения — в них нет токенов, данных входа и файлов сессии.
+          required: true

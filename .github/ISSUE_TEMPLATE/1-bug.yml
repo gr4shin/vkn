@@ -1,0 +1,77 @@
+name: Ошибка
+description: Сообщить о проблеме в работе VKN.
+title: "[Ошибка]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Опишите проблему так, чтобы её можно было воспроизвести. Работа функций VK зависит от доступности сервиса и ограничений аккаунта.
+
+        **Содержимое Issue и вложения могут быть публичными.** Не прикладывайте токены VK, cookies, QR-коды входа, файлы сессии или полные дампы аккаунта. Скриншоты и диагностические фрагменты сначала проверьте на личные данные.
+  - type: input
+    id: version
+    attributes:
+      label: Версия VKN
+      description: Укажите полную версию приложения из настроек или имени скачанного файла.
+      placeholder: "Например: 26.10.105749"
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Операционная система
+      description: Название и версия Windows или дистрибутива Linux. Для Linux желательно указать рабочее окружение и Wayland/X11.
+      placeholder: "Например: Windows 11 или Ubuntu 24.04, GNOME, Wayland"
+    validations:
+      required: true
+  - type: dropdown
+    id: package
+    attributes:
+      label: Тип сборки
+      options:
+        - Windows — установщик
+        - Windows — portable
+        - Linux — AppImage
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги воспроизведения
+      description: Что нужно сделать, чтобы увидеть проблему? Укажите, повторяется ли она каждый раз.
+      placeholder: |
+        1. Открыть…
+        2. Нажать…
+        3. Проблема возникает…
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемый результат
+      description: Что должно было произойти?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Фактический результат
+      description: Что произошло вместо этого? Если появилась ошибка, приведите её текст без личных данных.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Скриншоты и дополнительные сведения
+      description: Необязательно. Можно добавить проверенный скриншот или короткий фрагмент диагностики. Полный лог и дамп аккаунта не нужны.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Перед отправкой
+      options:
+        - label: Я проверил существующие Issues и не нашёл сообщения об этой же проблеме.
+          required: true
+        - label: Я проверил текст и вложения — в них нет токенов, данных входа и файлов сессии.
+          required: true
