@@ -4,6 +4,7 @@
 
 | Компонент | Версия | Лицензия пакета | Текст |
 | --- | --- | --- | --- |
+| AndroidX Media3 (Android: Transformer, ExoPlayer HLS и зависимые модули) | 1.11.1 | Apache-2.0 | [LICENSE](licenses/androidx-media3-LICENSE), [исходники](https://github.com/androidx/media/tree/1.11.1) |
 | electron | 44.4.5 | MIT | [LICENSE](licenses/electron-LICENSE) |
 | axios | 1.20.0 | MIT | [LICENSE](licenses/axios-LICENSE) |
 | axios-cookiejar-support | 6.0.5 | MIT | [LICENSE](licenses/axios-cookiejar-support-LICENSE) |
