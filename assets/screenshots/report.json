@@ -1,0 +1,33 @@
+{
+  "source": "Electron/Vite",
+  "demoData": true,
+  "width": 1400,
+  "height": 900,
+  "scenes": [
+    {
+      "screen": "library",
+      "theme": "dark",
+      "file": "library-dark.png"
+    },
+    {
+      "screen": "library",
+      "theme": "light",
+      "file": "library-light.png"
+    },
+    {
+      "screen": "full",
+      "theme": "dark",
+      "file": "player.png"
+    },
+    {
+      "screen": "settings-equalizer",
+      "theme": "dark",
+      "file": "equalizer.png"
+    },
+    {
+      "screen": "statistics",
+      "theme": "dark",
+      "file": "statistics.png"
+    }
+  ]
+}
