@@ -1,8 +1,8 @@
 # VKN
 
-Музыкальный плеер для ВКонтакте на **Windows, Linux и Android** с библиотекой, очередью, настройкой звука и локальным сохранением музыки.
+Музыкальный плеер для ВКонтакте на **Windows, Linux, Android и macOS** с библиотекой, очередью, настройкой звука и локальным сохранением музыки.
 
-**[Скачать последнюю версию](https://github.com/gr4shin/vkn/releases/latest)** · [Все релизы](https://github.com/gr4shin/vkn/releases) · [Приватность](PRIVACY.md) · [Условия использования](TERMS.md)
+**[Скачать стабильную версию](https://github.com/gr4shin/vkn/releases/latest)** · **[Скачать для macOS (предварительная версия)](https://github.com/gr4shin/vkn/releases/tag/v26.10.290034)** · [Все релизы](https://github.com/gr4shin/vkn/releases) · [Приватность](PRIVACY.md) · [Условия использования](TERMS.md)
 
 ![Библиотека VKN в тёмной теме](https://raw.githubusercontent.com/gr4shin/vkn/fb68c463635517d1f7c3059d15b8904ce0973dd3/assets/screenshots/library-dark.png)
 
@@ -38,6 +38,8 @@ Connect связывает настольный VKN и Android; первая с�
 | Windows x64 | `VKN-<версия>-win-x64-portable.exe` | Запуск без установки |
 | Linux x64 | `VKN-<версия>-linux-x86_64.AppImage` | AppImage; разрешите выполнение файла |
 | Android 7.0+ | `VKN-<версия>-android.apk` | Установка APK; разрешите установку из выбранного источника |
+
+**macOS (предварительный выпуск):** [VKN 26.10.290034 — macOS](https://github.com/gr4shin/vkn/releases/tag/v26.10.290034). Выберите `VKN-26.10.290034-mac-x64.dmg` для Intel или `VKN-26.10.290034-mac-arm64.dmg` для Apple Silicon. Сборки не подписаны сертификатом Apple и не нотариализованы: macOS может потребовать разрешить запуск в «Системные настройки → Конфиденциальность и безопасность». ARM64-бинарники проверены по архитектуре, но работа на реальном Apple Silicon пока не подтверждена. Этот выпуск отмечен как Pre-release и не заменяет стабильный релиз для других платформ.
 
 В релизах также есть `SHA256SUMS.txt` для проверки файлов и `release-metadata.json` с версией и коммитом сборки. Portable означает отсутствие установки; приложение всё равно сохраняет локальный профиль.
 
