@@ -28,6 +28,16 @@
       "screen": "statistics",
       "theme": "dark",
       "file": "statistics.png"
+    },
+    {
+      "screen": "queue",
+      "theme": "dark",
+      "file": "queue.png"
+    },
+    {
+      "screen": "login-token",
+      "theme": "dark",
+      "file": "login.png"
     }
   ]
 }

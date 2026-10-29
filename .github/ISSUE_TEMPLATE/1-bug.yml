@@ -20,8 +20,8 @@ body:
     id: system
     attributes:
       label: Операционная система
-      description: Название и версия Windows или дистрибутива Linux. Для Linux желательно указать рабочее окружение и Wayland/X11.
-      placeholder: "Например: Windows 11 или Ubuntu 24.04, GNOME, Wayland"
+      description: Название и версия Windows, Linux или Android. Для Android укажите модель телефона; для Linux — рабочее окружение и Wayland/X11.
+      placeholder: "Например: Windows 11; Ubuntu 24.04, GNOME, Wayland; Android 15, модель телефона"
     validations:
       required: true
   - type: dropdown
@@ -32,6 +32,7 @@ body:
         - Windows — установщик
         - Windows — portable
         - Linux — AppImage
+        - Android — APK
     validations:
       required: true
   - type: textarea
