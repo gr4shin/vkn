@@ -4,7 +4,7 @@
 
 **[Скачать последнюю версию](https://github.com/gr4shin/vkn/releases/latest)** · [Все релизы](https://github.com/gr4shin/vkn/releases) · [Приватность](PRIVACY.md) · [Условия использования](TERMS.md)
 
-![Библиотека VKN в тёмной теме](assets/screenshots/library-dark.png)
+![Библиотека VKN в тёмной теме](https://raw.githubusercontent.com/gr4shin/vkn/fb68c463635517d1f7c3059d15b8904ce0973dd3/assets/screenshots/library-dark.png)
 
 ## Что умеет
 
@@ -52,42 +52,42 @@ Connect связывает настольный VKN и Android; первая с�
 <details>
 <summary>Светлая тема</summary>
 
-![Библиотека VKN в светлой теме](assets/screenshots/library-light.png)
+![Библиотека VKN в светлой теме](https://raw.githubusercontent.com/gr4shin/vkn/fb68c463635517d1f7c3059d15b8904ce0973dd3/assets/screenshots/library-light.png)
 
 </details>
 
 <details>
 <summary>Большой плеер</summary>
 
-![Большой плеер VKN](assets/screenshots/player.png)
+![Большой плеер VKN](https://raw.githubusercontent.com/gr4shin/vkn/fb68c463635517d1f7c3059d15b8904ce0973dd3/assets/screenshots/player.png)
 
 </details>
 
 <details>
 <summary>Эквалайзер</summary>
 
-![Эквалайзер VKN](assets/screenshots/equalizer.png)
+![Эквалайзер VKN](https://raw.githubusercontent.com/gr4shin/vkn/fb68c463635517d1f7c3059d15b8904ce0973dd3/assets/screenshots/equalizer.png)
 
 </details>
 
 <details>
 <summary>Очередь воспроизведения</summary>
 
-![Очередь воспроизведения VKN](assets/screenshots/queue.png)
+![Очередь воспроизведения VKN](https://raw.githubusercontent.com/gr4shin/vkn/fb68c463635517d1f7c3059d15b8904ce0973dd3/assets/screenshots/queue.png)
 
 </details>
 
 <details>
 <summary>Вход по токену</summary>
 
-![Вход по токену в VKN](assets/screenshots/login.png)
+![Вход по токену в VKN](https://raw.githubusercontent.com/gr4shin/vkn/fb68c463635517d1f7c3059d15b8904ce0973dd3/assets/screenshots/login.png)
 
 </details>
 
 <details>
 <summary>Статистика, которая остаётся на устройстве</summary>
 
-![Локальная статистика прослушиваний](assets/screenshots/statistics.png)
+![Локальная статистика прослушиваний](https://raw.githubusercontent.com/gr4shin/vkn/fb68c463635517d1f7c3059d15b8904ce0973dd3/assets/screenshots/statistics.png)
 
 </details>
 
