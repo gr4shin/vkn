@@ -12,6 +12,7 @@
 | hls.js | 1.7.3 | Apache-2.0 | [LICENSE](licenses/hls.js-LICENSE) |
 | koffi | 3.3.2 | MIT | [LICENSE.txt](licenses/koffi-LICENSE.txt) |
 | lottie-web | 5.13.0 | MIT | [LICENSE.md](licenses/lottie-web-LICENSE.md) |
+| music-metadata | 12.3.3 | MIT | [LICENSE.txt](licenses/music-metadata-LICENSE.txt) |
 | qrcode | 1.5.4 | MIT | [license](licenses/qrcode-license) |
 | qs | 6.16.0 | BSD-3-Clause | [LICENSE.md](licenses/qs-LICENSE.md) |
 | tough-cookie | 6.0.2 | BSD-3-Clause | [LICENSE](licenses/tough-cookie-LICENSE) |
