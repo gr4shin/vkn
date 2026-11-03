@@ -20,9 +20,34 @@
       "file": "player.png"
     },
     {
+      "screen": "full-bookmarks",
+      "theme": "dark",
+      "file": "player-bookmarks.png"
+    },
+    {
       "screen": "settings-equalizer",
       "theme": "dark",
       "file": "equalizer.png"
+    },
+    {
+      "screen": "connect",
+      "theme": "dark",
+      "file": "connect.png"
+    },
+    {
+      "screen": "offline",
+      "theme": "dark",
+      "file": "offline.png"
+    },
+    {
+      "screen": "album",
+      "theme": "dark",
+      "file": "album.png"
+    },
+    {
+      "screen": "profile",
+      "theme": "dark",
+      "file": "profile.png"
     },
     {
       "screen": "statistics",
