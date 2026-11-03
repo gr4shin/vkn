@@ -1,12 +1,40 @@
+<div align="center">
+
+<img src="assets/vkn.svg" width="80" height="80" alt="Логотип VKN">
+
 # VKN
 
-Музыкальный плеер для локальных файлов и ВКонтакте на **Windows, Linux, Android и macOS** с общей очередью, настройкой звука и сохранением музыки.
+### Ваша музыка. С аккаунтом VK и без него.
 
-**[Скачать стабильную версию](https://github.com/gr4shin/vkn/releases/latest)** · [Все релизы](https://github.com/gr4shin/vkn/releases) · [Приватность](PRIVACY.md) · [Условия использования](TERMS.md)
+Локальные файлы и музыка ВКонтакте в одном плеере — с общей очередью, офлайн-библиотекой и настройкой звука.
 
-![Библиотека VKN в тёмной теме](https://raw.githubusercontent.com/gr4shin/vkn/fb68c463635517d1f7c3059d15b8904ce0973dd3/assets/screenshots/library-dark.png)
+[![Стабильный выпуск](https://img.shields.io/github/v/release/gr4shin/vkn?label=релиз&logo=github&logoColor=white&color=80d4c4&labelColor=252b33&style=flat-square)](https://github.com/gr4shin/vkn/releases/latest)
+[![Windows](https://img.shields.io/badge/Windows-x64-80d4c4?labelColor=252b33&style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xIDFoMTB2MTBIMXptMTIgMGgxMHYxMEgxM3pNMSAxM2gxMHYxMEgxem0xMiAwaDEwdjEwSDEzeiIvPjwvc3ZnPg==&logoColor=white)](#скачать-и-запустить)
+[![Linux](https://img.shields.io/badge/Linux-AppImage-80d4c4?labelColor=252b33&style=flat-square&logo=linux&logoColor=white)](#скачать-и-запустить)
+[![macOS](https://img.shields.io/badge/macOS-Intel_·_Apple_Silicon-80d4c4?labelColor=252b33&style=flat-square&logo=apple&logoColor=white)](#установка-и-первый-запуск-на-macos)
+[![Android](https://img.shields.io/badge/Android-7.0+-80d4c4?labelColor=252b33&style=flat-square&logo=android&logoColor=white)](#скачать-и-запустить)
+
+**[Скачать VKN](https://github.com/gr4shin/vkn/releases/latest)** · [Что нового](https://github.com/gr4shin/vkn/releases) · [Сообщить о проблеме](https://github.com/gr4shin/vkn/issues)
+
+[Возможности](#что-умеет) · [Установка](#скачать-и-запустить) · [Интерфейс](#интерфейс) · [Конфиденциальность](PRIVACY.md)
+
+</div>
+
+![Библиотека VKN в тёмной теме](assets/screenshots/library-dark.png)
+
+## Музыка начинается без входа
+
+Откройте аудиофайлы или папку, перетащите музыку в окно и слушайте. Подключите VK, когда захотите добавить свою сетевую библиотеку: локальные и VK-треки работают в общей очереди.
+
+| Без аккаунта | С музыкой VK | На ваших устройствах |
+| --- | --- | --- |
+| Файлы, папки и своя библиотека | Каталог, поиск и плейлисты | Windows, Linux, macOS и Android |
+| Обложки, сведения о файлах и закладки | Общая очередь с локальной музыкой | VKN Connect и пульт в браузере телефона |
 
 ## Что умеет
+
+<details>
+<summary><strong>Все возможности плеера</strong></summary>
 
 - Работа без аккаунта: открытие локальных аудиофайлов и папок, перетаскивание музыки в окно. После входа локальные и VK-треки можно слушать в одной очереди.
 - Локальная библиотека с обложками, сведениями о файле и удалением из библиотеки без удаления исходника. В браузере/Android выбранные файлы пока нужно повторно открывать после перезапуска; постоянные разрешения Android ещё не реализованы.
@@ -34,6 +62,8 @@ Connect связывает настольный VKN и Android; первая с�
 
 Поиск по текстам в сохранённой музыке работает с уже доступными локальными текстами. Получение текстов из VK не гарантируется.
 
+</details>
+
 ## Скачать и запустить
 
 В [последнем релизе](https://github.com/gr4shin/vkn/releases/latest) выберите файл для своей системы:
@@ -47,7 +77,24 @@ Connect связывает настольный VKN и Android; первая с�
 | macOS Intel | `VKN-<версия>-mac-x64.dmg` | Образ приложения для Intel |
 | macOS Apple Silicon | `VKN-<версия>-mac-arm64.dmg` | Образ приложения для ARM64 |
 
+<details>
+<summary><strong>Windows · установка и portable</strong></summary>
+
+Выберите `setup.exe` для установки или `portable.exe` для запуска без установки. Portable сохраняет локальный профиль и распаковывает приложение при каждом запуске.
+
+</details>
+
+<details>
+<summary><strong>Linux · запуск AppImage</strong></summary>
+
+В свойствах скачанного AppImage разрешите выполнение файла как программы и откройте его.
+
 В предыдущих выпусках AppImage назывался `VKN-<версия>-linux-x86_64.AppImage`; в новых сборках часть `linux` убрана.
+
+</details>
+
+<details>
+<summary><strong>macOS · установка и первый запуск</strong></summary>
 
 Сборки macOS не подписаны сертификатом Developer ID и не проходят нотариальное заверение Apple. Проверка ARM64-бинарников при сборке не подтверждает работу на настоящем Apple Silicon.
 
@@ -60,11 +107,20 @@ Connect связывает настольный VKN и Android; первая с�
 
 Разрешайте запуск только для копии, скачанной из [официальных выпусков VKN](https://github.com/gr4shin/vkn/releases). Эта инструкция относится к предупреждению о непроверенном разработчике; сообщения об обнаруженном вредоносном ПО или повреждении приложения требуют отдельной проверки. Отключать защиту macOS целиком не нужно. Подробнее — [инструкция Apple](https://support.apple.com/ru-ru/102445).
 
-В релизах также есть `SHA256SUMS.txt` для проверки файлов и `release-metadata.json` с версией и коммитом сборки. Portable означает отсутствие установки; приложение всё равно сохраняет локальный профиль.
+</details>
+
+<details>
+<summary><strong>Android · установка APK</strong></summary>
+
+Скачайте APK и разрешите установку из выбранного источника, когда Android запросит разрешение.
 
 На Android вход выполняется через кнопку открытия VK или токен, громкость регулируется системой. Загрузки сохраняются в системную папку `Music/VKN`: исходный MP3 — как MP3, HLS/AAC — как M4A. Очередь поддерживает прогресс, отмену, повтор и паузу коллекции. Интеграция Discord и перекодирование в MP3 доступны в desktop. Прежний тестовый APK имел другой ID: релизный VKN устанавливается отдельно и требует нового входа.
 
-После запуска войдите в свой аккаунт VK предусмотренным в приложении способом. Используйте музыку в соответствии с доступом своего аккаунта и правами правообладателей.
+</details>
+
+В релизах также есть `SHA256SUMS.txt` для проверки файлов и `release-metadata.json` с версией и коммитом сборки. Portable означает отсутствие установки; приложение всё равно сохраняет локальный профиль.
+
+После запуска можно сразу открыть локальную музыку. Для библиотеки VK войдите в аккаунт предусмотренным в приложении способом. Используйте музыку в соответствии с доступом своего аккаунта и правами правообладателей.
 
 ## Интерфейс
 
@@ -73,42 +129,77 @@ Connect связывает настольный VKN и Android; первая с�
 <details>
 <summary>Светлая тема</summary>
 
-![Библиотека VKN в светлой теме](https://raw.githubusercontent.com/gr4shin/vkn/fb68c463635517d1f7c3059d15b8904ce0973dd3/assets/screenshots/library-light.png)
+![Библиотека VKN в светлой теме](assets/screenshots/library-light.png)
 
 </details>
 
 <details>
 <summary>Большой плеер</summary>
 
-![Большой плеер VKN](https://raw.githubusercontent.com/gr4shin/vkn/fb68c463635517d1f7c3059d15b8904ce0973dd3/assets/screenshots/player.png)
+![Большой плеер VKN](assets/screenshots/player.png)
+
+</details>
+
+<details>
+<summary>Закладки в большом плеере</summary>
+
+![Большой плеер с закладками трека](assets/screenshots/player-bookmarks.png)
+
+</details>
+
+<details>
+<summary>VKN Connect — выбор устройства</summary>
+
+![Панель VKN Connect с компьютером и телефоном](assets/screenshots/connect.png)
+
+</details>
+
+<details>
+<summary>Сохранённая музыка без интернета</summary>
+
+![Библиотека сохранённой музыки](assets/screenshots/offline.png)
+
+</details>
+
+<details>
+<summary>Страница альбома</summary>
+
+![Страница альбома VKN](assets/screenshots/album.png)
+
+</details>
+
+<details>
+<summary>Профиль и закладки</summary>
+
+![Демонстрационный профиль и закладки](assets/screenshots/profile.png)
 
 </details>
 
 <details>
 <summary>Эквалайзер</summary>
 
-![Эквалайзер VKN](https://raw.githubusercontent.com/gr4shin/vkn/fb68c463635517d1f7c3059d15b8904ce0973dd3/assets/screenshots/equalizer.png)
+![Эквалайзер VKN](assets/screenshots/equalizer.png)
 
 </details>
 
 <details>
 <summary>Очередь воспроизведения</summary>
 
-![Очередь воспроизведения VKN](https://raw.githubusercontent.com/gr4shin/vkn/fb68c463635517d1f7c3059d15b8904ce0973dd3/assets/screenshots/queue.png)
+![Очередь воспроизведения VKN](assets/screenshots/queue.png)
 
 </details>
 
 <details>
 <summary>Вход по токену</summary>
 
-![Вход по токену в VKN](https://raw.githubusercontent.com/gr4shin/vkn/fb68c463635517d1f7c3059d15b8904ce0973dd3/assets/screenshots/login.png)
+![Вход по токену в VKN](assets/screenshots/login.png)
 
 </details>
 
 <details>
 <summary>Статистика, которая остаётся на устройстве</summary>
 
-![Локальная статистика прослушиваний](https://raw.githubusercontent.com/gr4shin/vkn/fb68c463635517d1f7c3059d15b8904ce0973dd3/assets/screenshots/statistics.png)
+![Локальная статистика прослушиваний](assets/screenshots/statistics.png)
 
 </details>
 
