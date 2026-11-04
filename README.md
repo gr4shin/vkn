@@ -13,8 +13,9 @@
 [![Linux](https://img.shields.io/badge/Linux-AppImage-80d4c4?labelColor=252b33&style=flat-square&logo=linux&logoColor=white)](#скачать-и-запустить)
 [![macOS](https://img.shields.io/badge/macOS-Intel_·_Apple_Silicon-80d4c4?labelColor=252b33&style=flat-square&logo=apple&logoColor=white)](#установка-и-первый-запуск-на-macos)
 [![Android](https://img.shields.io/badge/Android-7.0+-80d4c4?labelColor=252b33&style=flat-square&logo=android&logoColor=white)](#скачать-и-запустить)
+[![Discord](https://img.shields.io/badge/Discord-сообщество-80d4c4?labelColor=252b33&style=flat-square&logo=discord&logoColor=white)](https://discord.gg/H7CePVp4vS)
 
-**[Скачать VKN](https://github.com/gr4shin/vkn/releases/latest)** · [Что нового](https://github.com/gr4shin/vkn/releases) · [Сообщить о проблеме](https://github.com/gr4shin/vkn/issues)
+**[Скачать VKN](https://github.com/gr4shin/vkn/releases/latest)** · [Что нового](https://github.com/gr4shin/vkn/releases) · [Сообщить о проблеме](https://github.com/gr4shin/vkn/issues) · [Discord](https://discord.gg/H7CePVp4vS)
 
 [Возможности](#что-умеет) · [Установка](#скачать-и-запустить) · [Интерфейс](#интерфейс) · [Конфиденциальность](PRIVACY.md)
 
@@ -238,6 +239,12 @@ Codex используется при разработке. В установл�
 © 2026 gr4shin. Все права на собственные материалы проекта сохранены. Условия использования официальных сборок: [LICENSE](LICENSE) и [TERMS.md](TERMS.md).
 
 Сторонние компоненты распространяются по своим лицензиям, включая GPL-компонент FFmpeg: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Условия VKN не заменяют их лицензии.
+
+## Сообщество
+
+**[Присоединиться к Discord VKN](https://discord.gg/H7CePVp4vS)** — общение, помощь и обсуждение плеера.
+
+На сервере есть русские и английские каналы, а также отдельные обсуждения Windows, Linux, macOS и Android. При вступлении выберите язык и платформу; изменить выбор можно в разделе Discord «Каналы и роли».
 
 ## Сообщить о проблеме
 
