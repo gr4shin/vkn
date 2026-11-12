@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Играть в VKN</title>
+<style>
+    :root { color-scheme: light dark; font: 1rem/1.5 system-ui, sans-serif; }
+    body { max-width: 32rem; margin: 12vh auto; padding: 0 1.25rem; }
+    nav { display: flex; flex-wrap: wrap; gap: .75rem; }
+    nav[hidden] { display: none; }
+    nav a { border: 1px solid currentColor; border-radius: .5rem; padding: .6rem 1rem; }
+</style>
+<main>
+    <h1>Играть в VKN</h1>
+    <p id="message">Для открытия трека нужна ссылка из Discord.</p>
+    <nav id="actions" hidden>
+        <a id="play">Открыть VKN</a>
+        <a id="vk">Открыть трек в VK</a>
+    </nav>
+</main>
+<script>
+    const id = location.hash.slice(1);
+    if (/^-?[1-9]\d{0,18}_[1-9]\d{0,18}$/.test(id)) {
+        document.getElementById('play').href = 'vkn://play/' + id;
+        document.getElementById('vk').href = 'https://vk.ru/audio' + id;
+        document.getElementById('message').textContent = 'Откройте установленный VKN или перейдите к треку в VK.';
+        document.getElementById('actions').hidden = false;
+    }
+</script>
