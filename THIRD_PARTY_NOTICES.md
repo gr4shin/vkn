@@ -5,6 +5,7 @@
 | Компонент | Версия | Лицензия пакета | Текст |
 | --- | --- | --- | --- |
 | AndroidX Media3 (Android: Transformer, ExoPlayer HLS и зависимые модули) | 1.11.1 | Apache-2.0 | [LICENSE](licenses/androidx-media3-LICENSE), [исходники](https://github.com/androidx/media/tree/1.11.1) |
+| Jaudiotagger (Android) | 3.0.1 | LGPL-2.1-or-later | [LICENSE](licenses/jaudiotagger-LICENSE), [исходники версии 3.0.1](https://repo.maven.apache.org/maven2/net/jthink/jaudiotagger/3.0.1/jaudiotagger-3.0.1-sources.jar) |
 | electron | 44.4.5 | MIT | [LICENSE](licenses/electron-LICENSE) |
 | axios | 1.20.0 | MIT | [LICENSE](licenses/axios-LICENSE) |
 | axios-cookiejar-support | 6.0.5 | MIT | [LICENSE](licenses/axios-cookiejar-support-LICENSE) |
