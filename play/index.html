@@ -3,28 +3,104 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
-<title>Играть в VKN</title>
+<title>Открыть музыку · VKN</title>
 <style>
-    :root { color-scheme: light dark; font: 1rem/1.5 system-ui, sans-serif; }
-    body { max-width: 32rem; margin: 12vh auto; padding: 0 1.25rem; }
+    :root {
+        color-scheme: light dark;
+        font: 1rem/1.55 system-ui, sans-serif;
+        --background: light-dark(#f6f7f9, #111318);
+        --surface: light-dark(#ffffff, #191c22);
+        --text: light-dark(#20232b, #e4e6eb);
+        --muted: light-dark(#616875, #b0b3b8);
+        --line: light-dark(#ced0d4, #3a3b3c);
+        --accent: #0077ff;
+        --accent-ink: light-dark(#0071f2, #1281ff);
+        --button-background: light-dark(#e9ecf1, #272b34);
+    }
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    body {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        place-items: center;
+        min-height: 100svh;
+        margin: 0;
+        padding: 1.25rem;
+        background: var(--background);
+        color: var(--text);
+    }
+    main {
+        width: min(100%, 34rem);
+        padding: clamp(1.25rem, 5vw, 2.5rem);
+        border: 1px solid var(--line);
+        border-radius: 1.5rem;
+        background: var(--surface);
+    }
+    .brand { color: var(--accent-ink); font-weight: 800; letter-spacing: .12em; }
+    h1 { margin: .5rem 0; font-size: clamp(1.7rem, 6vw, 2.5rem); line-height: 1.1; }
+    p { margin: .75rem 0 1.25rem; color: var(--muted); }
     nav { display: flex; flex-wrap: wrap; gap: .75rem; }
-    nav[hidden] { display: none; }
-    nav a { border: 1px solid currentColor; border-radius: .5rem; padding: .6rem 1rem; }
+    button:focus-visible { outline: 2px solid var(--accent-ink); outline-offset: 4px; }
+    .button {
+        border: 1px solid var(--line);
+        border-radius: .7rem;
+        padding: .65rem 1rem;
+        color: var(--text);
+        background: var(--button-background);
+        font: inherit;
+        font-weight: 650;
+        cursor: pointer;
+    }
+    .button:hover { border-color: var(--accent-ink); }
+    .button:active { transform: translateY(1px); }
+    .primary { background: var(--accent); border-color: var(--accent); color: #000; }
+    .project { margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+    .project h2 { margin: 0; font-size: 1.1rem; }
 </style>
 <main>
-    <h1>Играть в VKN</h1>
-    <p id="message">Для открытия трека нужна ссылка из Discord.</p>
-    <nav id="actions" hidden>
-        <a id="play">Открыть VKN</a>
-        <a id="vk">Открыть трек в VK</a>
+    <span class="brand">VKN</span>
+    <h1 id="title">Музыка VK в VKN</h1>
+    <p id="message">Откройте ссылку из статуса Discord, чтобы перейти к музыке.</p>
+    <nav id="actions" aria-label="Открыть музыку" hidden>
+        <button type="button" class="button primary" id="play" hidden>Открыть в VKN</button>
+        <button type="button" class="button" id="vk">Открыть в VK</button>
     </nav>
+    <section class="project" aria-labelledby="project-title">
+        <h2 id="project-title">Впервые здесь?</h2>
+        <p>VKN — проигрыватель музыки VK. Посмотрите, как он работает, или скачайте его для своей системы.</p>
+        <nav aria-label="О проекте VKN">
+            <button class="button" type="button" data-url="https://github.com/gr4shin/vkn/releases/latest">Скачать VKN</button>
+            <button class="button" type="button" data-url="https://github.com/gr4shin/vkn">О проекте на GitHub</button>
+            <button class="button" type="button" data-url="https://discord.gg/H7CePVp4vS">Сообщество Discord</button>
+        </nav>
+    </section>
 </main>
 <script>
-    const id = location.hash.slice(1);
-    if (/^-?[1-9]\d{0,18}_[1-9]\d{0,18}$/.test(id)) {
-        document.getElementById('play').href = 'vkn://play/' + id;
-        document.getElementById('vk').href = 'https://vk.ru/audio' + id;
-        document.getElementById('message').textContent = 'Откройте установленный VKN или перейдите к треку в VK.';
+    document.querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', () => {
+            if (button.dataset.url) location.assign(button.dataset.url);
+        });
+    });
+
+    const target = /^(?:(album|playlist)\/)?(-?[1-9]\d*_[1-9]\d*)$/.exec(location.hash.slice(1));
+    if (target) {
+        const [, collection, id] = target;
+        const title = document.getElementById('title');
+        const message = document.getElementById('message');
+        const play = document.getElementById('play');
+        const vk = document.getElementById('vk');
+        const canPlay = !collection && /^-?[1-9]\d{0,18}_[1-9]\d{0,18}$/.test(id);
+
+        title.textContent = collection === 'album' ? 'Открыть альбом' : collection === 'playlist' ? 'Открыть плейлист' : 'Открыть трек';
+        message.textContent = canPlay
+            ? 'Если VKN уже установлен, откройте трек в приложении. Его также можно открыть в VK.'
+            : 'Откройте музыку на сайте VK.';
+        vk.dataset.url = collection ? 'https://vk.ru/music/playlist/' + id : 'https://vk.ru/audio' + id;
+        if (canPlay) {
+            play.dataset.url = 'vkn://play/' + id;
+            play.hidden = false;
+        }
         document.getElementById('actions').hidden = false;
     }
 </script>
+</html>
