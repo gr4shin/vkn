@@ -9,6 +9,7 @@
 Локальные файлы и музыка ВКонтакте в одном плеере — с общей очередью, офлайн-библиотекой и настройкой звука.
 
 [![Стабильный выпуск](https://img.shields.io/github/v/release/gr4shin/vkn?label=релиз&logo=github&logoColor=white&color=80d4c4&labelColor=252b33&style=flat-square)](https://github.com/gr4shin/vkn/releases/latest)
+[![Скачивания последнего релиза](https://img.shields.io/github/downloads/gr4shin/vkn/latest/total?label=скачиваний%20релиза&color=80d4c4&labelColor=252b33&style=flat-square)](https://github.com/gr4shin/vkn/releases/latest)
 [![Windows](https://img.shields.io/badge/Windows-x64-80d4c4?labelColor=252b33&style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xIDFoMTB2MTBIMXptMTIgMGgxMHYxMEgxM3pNMSAxM2gxMHYxMEgxem0xMiAwaDEwdjEwSDEzeiIvPjwvc3ZnPg==&logoColor=white)](#скачать-и-запустить)
 [![Linux](https://img.shields.io/badge/Linux-AppImage-80d4c4?labelColor=252b33&style=flat-square&logo=linux&logoColor=white)](#скачать-и-запустить)
 [![macOS](https://img.shields.io/badge/macOS-Intel_·_Apple_Silicon-80d4c4?labelColor=252b33&style=flat-square&logo=apple&logoColor=white)](#установка-и-первый-запуск-на-macos)
