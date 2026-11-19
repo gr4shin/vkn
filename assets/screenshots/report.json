@@ -60,9 +60,9 @@
       "file": "queue.png"
     },
     {
-      "screen": "login-token",
+      "screen": "login",
       "theme": "dark",
-      "file": "login.png"
+      "file": "login-qr.png"
     }
   ]
 }

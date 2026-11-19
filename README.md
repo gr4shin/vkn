@@ -209,9 +209,9 @@ Connect связывает настольный VKN с Android и iPhone; пер
 </details>
 
 <details>
-<summary>Вход по токену</summary>
+<summary>Вход по QR-коду</summary>
 
-![Вход по токену в VKN](assets/screenshots/login.png)
+![Экран входа по QR-коду с демонстрационным кодом](assets/screenshots/login-qr.png)
 
 </details>
 
