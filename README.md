@@ -9,7 +9,8 @@
 Локальные файлы и музыка ВКонтакте в одном плеере — с общей очередью, офлайн-библиотекой и настройкой звука.
 
 [![Стабильный выпуск](https://img.shields.io/github/v/release/gr4shin/vkn?label=релиз&logo=github&logoColor=white&color=80d4c4&labelColor=252b33&style=flat-square)](https://github.com/gr4shin/vkn/releases/latest)
-[![Скачивания последнего релиза](https://img.shields.io/github/downloads/gr4shin/vkn/latest/total?label=скачиваний%20релиза&color=80d4c4&labelColor=252b33&style=flat-square)](https://github.com/gr4shin/vkn/releases/latest)
+[![Скачивания сборок за всё время](https://img.shields.io/badge/скачивания_всего-1352-80d4c4?labelColor=252b33&style=flat-square)](https://github.com/gr4shin/vkn/releases)
+[![Скачивания сборок последнего релиза](https://img.shields.io/badge/скачивания_релиза-110-80d4c4?labelColor=252b33&style=flat-square)](https://github.com/gr4shin/vkn/releases/latest)
 [![Windows](https://img.shields.io/badge/Windows-x64-80d4c4?labelColor=252b33&style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xIDFoMTB2MTBIMXptMTIgMGgxMHYxMEgxM3pNMSAxM2gxMHYxMEgxem0xMiAwaDEwdjEwSDEzeiIvPjwvc3ZnPg==&logoColor=white)](#скачать-и-запустить)
 [![Linux](https://img.shields.io/badge/Linux-AppImage-80d4c4?labelColor=252b33&style=flat-square&logo=linux&logoColor=white)](#скачать-и-запустить)
 [![macOS](https://img.shields.io/badge/macOS-Intel_·_Apple_Silicon-80d4c4?labelColor=252b33&style=flat-square&logo=apple&logoColor=white)](#установка-и-первый-запуск-на-macos)
@@ -23,7 +24,9 @@
 
 </div>
 
-![Библиотека VKN в тёмной теме](assets/screenshots/library-dark.png)
+![Библиотека VKN в тёмной теме](https://raw.githubusercontent.com/gr4shin/vkn/dd7b1145c6590be763485c92c0690d56a0659ab0/assets/screenshots/library-dark.png)
+
+Снимок сделан в текущей сборке разработки. Стабильную версию можно скачать на странице [последнего релиза](https://github.com/gr4shin/vkn/releases/latest).
 
 ## Музыка начинается без входа
 
@@ -48,13 +51,14 @@
 - Эквалайзер на 10 полос, пресеты, скорость, плавные переходы и таймер сна.
 - Сохранение доступных треков для офлайн-прослушивания и экспорт в MP3. На компьютере можно сохранить один трек, несколько выделенных или все «Мои треки». При повторном сохранении докачиваются недостающие треки.
 - В «Моих треках» на компьютере можно выбрать жанр, если VK предлагает фильтры для библиотеки.
-- Светлая, тёмная и AMOLED темы, настройки внешнего вида и компактное окно.
-- Локальная статистика прослушиваний для самого пользователя.
-- Дополнительные интеграции: Discord Rich Presence и трансляция трека в VK.
+- Светлая, тёмная и AMOLED темы, собственный цвет акцента, отдельные настройки размера текста и плотности списков. У пульса обложки можно настроить чувствительность к басу, силу эффекта и скорость движения.
+- Локальная статистика прослушиваний с обложками, переходами к артистам, альбомам и плейлистам и меню воспроизведения треков.
+- Дополнительные интеграции: Discord Rich Presence и трансляция трека в VK. В новых версиях кнопка «Открыть» в статусе Discord ведёт на страницу с переходом к музыке и ссылками на VKN.
 - Несколько аккаунтов на Windows/Linux: отдельные настройки, сохранённая музыка и лимиты кэша; удаление аккаунта вместе с его локальными данными.
 - История поиска, подсказки, запоминание позиции подкастов и длинных треков, отдельная скорость их воспроизведения.
 - Резервная копия локальных данных, подборки сохранённой музыки и фильтр по исполнителю.
-- Мини-плеер и режим «Поверх всех окон» на Windows/Linux.
+- Мини-плеер и режим «Поверх всех окон» на Windows/Linux. В Windows панель кнопок мини-плеера скрывается при уходе курсора и возвращается при наведении. В следующем выпуске размер мини-окна будет фиксированным. Появятся регулятор громкости и автоскрытие системной обводки в Windows 11.
+- Управление с панели задач. В следующем выпуске Windows получит кнопки управления в миниатюре панели задач. В KDE Plasma кнопки для активной медиасессии отображаются, если в настройках панели задач включено управление мультимедиа в подсказках.
 - **VKN Connect (бета):** связь приложений одного аккаунта в локальной сети, выбор устройства воспроизведения и управление через обычный плеер; просмотр и редактирование очереди другого устройства, добавление треков и очистка с подтверждением.
 - Русский и английский интерфейс: при первом запуске язык выбирается по системе, затем учитывается сохранённый выбор.
 
@@ -63,6 +67,10 @@
 Connect связывает настольный VKN с Android и iPhone; первая связь требует подтверждения на принимающем устройстве. Компьютеры обнаруживаются автоматически, также можно указать адрес вручную. Обоим устройствам нужна одна локальная сеть, а брандмауэр должен разрешать соединение. На iPhone разрешите приложению доступ к локальной сети. Прямая связь между телефонами пока не поддерживается. Отдельный веб-пульт позволяет управлять компьютером из браузера телефона; внешний сервер для обеих функций не требуется.
 
 Панель Connect показывает, где сейчас играет музыка, и позволяет продолжить её на другом устройстве. Включение связи доступно сразу, ручной ввод адреса и другие дополнительные способы подключения собраны в свёрнутой помощи. Отключённый Connect и пустые загрузки на телефоне находятся в меню профиля.
+
+Для следующего обновления подготовлены настройка видимости разделов главного меню, таймер сна в меню плеера и очистка истории загрузок с сохранением скачанных файлов.
+
+В текущей сборке разработки для Android и iPhone обновлены полноэкранный плеер и меню дополнительных действий, а в локальной музыке есть отдельная кнопка входа в VK. На обеих платформах доработано фоновое воспроизведение.
 
 Поиск по текстам в сохранённой музыке работает с уже доступными локальными текстами. Получение текстов из VK не гарантируется.
 
@@ -144,68 +152,68 @@ Connect связывает настольный VKN с Android и iPhone; пер
 
 ## Интерфейс
 
-Снимки получены из настоящего интерфейса Electron на демонстрационных данных. Это вымышленные треки, обложки и профиль; фотографии и библиотека реального пользователя не используются.
+Снимки сделаны в текущей сборке VKN для компьютера. На них показаны демонстрационные треки, обложки и профиль.
 
 <details>
 <summary>Светлая тема</summary>
 
-![Библиотека VKN в светлой теме](assets/screenshots/library-light.png)
+![Библиотека VKN в светлой теме](https://raw.githubusercontent.com/gr4shin/vkn/dd7b1145c6590be763485c92c0690d56a0659ab0/assets/screenshots/library-light.png)
 
 </details>
 
 <details>
 <summary>Большой плеер</summary>
 
-![Большой плеер VKN](assets/screenshots/player.png)
+![Большой плеер VKN](https://raw.githubusercontent.com/gr4shin/vkn/dd7b1145c6590be763485c92c0690d56a0659ab0/assets/screenshots/player.png)
 
 </details>
 
 <details>
 <summary>Закладки в большом плеере</summary>
 
-![Большой плеер с закладками трека](assets/screenshots/player-bookmarks.png)
+![Большой плеер с закладками трека](https://raw.githubusercontent.com/gr4shin/vkn/dd7b1145c6590be763485c92c0690d56a0659ab0/assets/screenshots/player-bookmarks.png)
 
 </details>
 
 <details>
 <summary>VKN Connect — выбор устройства</summary>
 
-![Панель VKN Connect с компьютером и телефоном](assets/screenshots/connect.png)
+![Панель VKN Connect с компьютером и телефоном](https://raw.githubusercontent.com/gr4shin/vkn/dd7b1145c6590be763485c92c0690d56a0659ab0/assets/screenshots/connect.png)
 
 </details>
 
 <details>
 <summary>Сохранённая музыка без интернета</summary>
 
-![Библиотека сохранённой музыки](assets/screenshots/offline.png)
+![Библиотека сохранённой музыки](https://raw.githubusercontent.com/gr4shin/vkn/dd7b1145c6590be763485c92c0690d56a0659ab0/assets/screenshots/offline.png)
 
 </details>
 
 <details>
 <summary>Страница альбома</summary>
 
-![Страница альбома VKN](assets/screenshots/album.png)
+![Страница альбома VKN](https://raw.githubusercontent.com/gr4shin/vkn/dd7b1145c6590be763485c92c0690d56a0659ab0/assets/screenshots/album.png)
 
 </details>
 
 <details>
 <summary>Профиль и закладки</summary>
 
-![Демонстрационный профиль и закладки](assets/screenshots/profile.png)
+![Демонстрационный профиль и закладки](https://raw.githubusercontent.com/gr4shin/vkn/dd7b1145c6590be763485c92c0690d56a0659ab0/assets/screenshots/profile.png)
 
 </details>
 
 <details>
 <summary>Эквалайзер</summary>
 
-![Эквалайзер VKN](assets/screenshots/equalizer.png)
+![Эквалайзер VKN](https://raw.githubusercontent.com/gr4shin/vkn/dd7b1145c6590be763485c92c0690d56a0659ab0/assets/screenshots/equalizer.png)
 
 </details>
 
 <details>
 <summary>Очередь воспроизведения</summary>
 
-![Очередь воспроизведения VKN](assets/screenshots/queue.png)
+![Очередь воспроизведения VKN](https://raw.githubusercontent.com/gr4shin/vkn/dd7b1145c6590be763485c92c0690d56a0659ab0/assets/screenshots/queue.png)
 
 </details>
 
@@ -214,14 +222,14 @@ Connect связывает настольный VKN с Android и iPhone; пер
 
 На компьютере перед показом QR можно выбрать защиту системой или защиту системой и паролем. В первом случае VKN открывает сохранённый вход автоматически. Во втором при запуске VKN нужно ввести пароль, который защищает все сохранённые аккаунты профиля. Можно выбрать профиль VK Android или Web. В режиме Web VKN продлевает вход, пока действует сессия VK.
 
-![Экран входа по QR-коду с демонстрационным кодом](assets/screenshots/login-qr.png)
+![Экран входа по QR-коду с демонстрационным кодом](https://raw.githubusercontent.com/gr4shin/vkn/dd7b1145c6590be763485c92c0690d56a0659ab0/assets/screenshots/login-qr.png)
 
 </details>
 
 <details>
 <summary>Статистика, которая остаётся на устройстве</summary>
 
-![Локальная статистика прослушиваний](assets/screenshots/statistics.png)
+![Локальная статистика прослушиваний](https://raw.githubusercontent.com/gr4shin/vkn/dd7b1145c6590be763485c92c0690d56a0659ab0/assets/screenshots/statistics.png)
 
 </details>
 
